@@ -30,6 +30,7 @@ body{
   font-family: var(--font-2);
   overflow-x: hidden;
   background: var(--stone-100);
+  color: var(--stone-600);
 }
 
 *{
@@ -42,9 +43,39 @@ body{
 .my-section{
   padding-top: 40px;
 }
+
 .separator{
   background-color: var(--stone-100);
+  margin-top: 40px;
 }
+
+.info-title{
+  font-size: 26px;
+  font-family: var(--font-1);
+  color: var(--brown-800);
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+/* list items for ingredients and instructions */
+.list-item{
+  padding-left: 25px;
+}
+.list-item li{
+  padding-bottom: 10px;
+}
+.list-item li::marker{
+  color: var(--brown-800);
+  font-weight: bold;
+}
+.list-item p{
+  color: var(--stone-600);
+  padding-left: 10px;
+}
+.list-item p span{
+  font-weight: bold;
+}
+
 
 /* outer wrapper */
 .outer-wrapper{
@@ -70,6 +101,7 @@ body{
 /* title */
 .title{
   padding: 30px 0;
+  color: var(--stone-900);
 }
 
 .title h1{
@@ -109,5 +141,27 @@ body{
 }
 .preparation-inner ul p span{
   color: var(--stone-600);
+  font-weight: bold;
+}
+
+
+/* nutrition */
+.nutrition-wrapper p{
+  padding-bottom: 15px;
+}
+
+.nutrition-wrapper table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition-wrapper table tr td{
+  border-bottom: 1px solid var(--stone-150)!important;
+  padding: 15px;
+}
+.nutrition-wrapper table tr:last-child td{
+  border-bottom: 0!important;
+}
+.nutrition-wrapper table tr td:nth-child(even){
+  color: var(--brown-800);
   font-weight: bold;
 }
