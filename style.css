@@ -82,6 +82,7 @@ body{
   background-color: var(--white);
   padding: 40px;
   width: 800px;
+  max-width: 100%;
   margin: 100px auto;
   border-radius: 20px;
 }
@@ -96,6 +97,9 @@ body{
 .outer-wrapper .banner-image img{
   width: 100%;
   height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* title */
@@ -164,4 +168,24 @@ body{
 .nutrition-wrapper table tr td:nth-child(even){
   color: var(--brown-800);
   font-weight: bold;
+}
+
+
+
+/* responsive design */
+@media screen and (max-width: 475px) {
+  .outer-wrapper{
+    padding: 0;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+
+  .outer-wrapper .responsive-container{
+    padding: 30px;
+  }
+
+  .outer-wrapper .banner-image{
+    border-radius: 0;
+    height: 200px;
+  }
 }
